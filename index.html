@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo App</title>
-    <link rel="stylesheet" href="./Todo App_files/style.css">
-<link href="./Todo App_files/css2" rel="stylesheet"></head><span id="warning-container"><i data-reactroot=""></i></span>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body class="page">
     <header class="header">
-        <img class="header__img" src="./Todo App_files/eisenhower-matrix.jpg" alt="Матрица Эйзенхауэра">
-        <a class="header__link" href="https://goal-life.com/page/method/matrix-eisenhower">
+        <img class="header__img" src="eisenhower-matrix.jpg" alt="Матрица Эйзенхауэра">
+        <a class="header__link" href="../../page/method/matrix-eisenhower.html">
             Want more details?
         </a>
     </header>
@@ -28,15 +28,40 @@
 
             <form class="todo-block" method="dialog">
                 <ul class="todo">
-                    
-                    
+                    <li class="list">
+                        <input class="list__checkbox" type="checkbox">
+                        <label class="list__label">Pay Bills</label>
+                        <input class="list__input" type="text">
+                        <button class="btn btn_edit edit">Edit</button>
+                        <button class="btn btn_delete">
+                            <img class="btn__img" src="remove.svg" alt="Icon delete">
+                        </button>
+
+                    </li>
+                    <li class="list list_mode">
+                        <input class="list__checkbox" type="checkbox">
+                        <label class="list__label">Go Shopping</label>
+                        <input class="list__input" type="text" value="Go Shopping">
+                        <button class="btn btn_edit">Save</button>
+                        <button class="btn btn_delete">
+                            <img class="btn__img" src="remove.svg" alt="Icon delete">
+                        </button>
+                    </li>
                 </ul>
             </form>
 
             <h3 class="matrix__logo">Completed</h3>
             <form class="create-block" method="dialog">
                 <ul class="create">
-                    
+                    <li class="list">
+                        <input class="list__checkbox" type="checkbox" checked="">
+                        <label class="list__label">See the Doctor</label>
+                        <input class="list__input" type="text">
+                        <button class="btn btn_edit">Edit</button>
+                        <button class="btn btn_delete">
+                            <img class="btn__img" src="remove.svg" alt="Icon delete">
+                        </button>
+                    </li>
                 </ul>
             </form>
         </section>
@@ -45,6 +70,6 @@
 
 
 
-    <script src="./Todo App_files/app.js.Без названия"></script>
-
-</body></html>
+    <script src="app.js"></script>
+</body>
+</html>
